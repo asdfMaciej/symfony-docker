@@ -10,6 +10,8 @@ RUN apt-get update && apt-get install -y \
     openssl \
     git \
     unzip \
+    zip \
+    php-zip \
     zlib1g-dev \
     libzip-dev \
     libfreetype6-dev \
