@@ -12,7 +12,7 @@ It is composed by 3 containers:
 
 ## Installation
 
-1. 😀 Clone this rep.
+1. Clone this repo.
 
 2. Run `docker-compose up -d`
 
@@ -24,11 +24,9 @@ Creating symfony-docker_php_1   ... done
 Creating symfony-docker_nginx_1 ... done
 ```
 
-4. Use this value for the DATABASE_URL environment variable of Symfony:
-
+4. Run in PHP container:
 ```
-DATABASE_URL=mysql://app_user:helloworld@db:3306/app_db?serverVersion=5.7
+composer install
+composer update symfony/flex
+composer require annotations
 ```
-
-You could change the name, user and password of the database in the `env` file at the root of the project.
-

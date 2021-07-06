@@ -38,7 +38,3 @@ RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local
 COPY docker/php/php.ini /var/www/symfony
 
 WORKDIR /var/www/symfony
-
-RUN chmod +x /entrypoint.sh
-
-ENTRYPOINT ["/entrypoint.sh"]
