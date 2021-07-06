@@ -11,7 +11,6 @@ RUN apt-get update && apt-get install -y \
     git \
     unzip \
     zip \
-    php-zip \
     zlib1g-dev \
     libzip-dev \
     libfreetype6-dev \
@@ -34,7 +33,5 @@ RUN ln -snf /usr/share/zoneinfo/${TIMEZONE} /etc/localtime && echo ${TIMEZONE} >
     && "date"
 
 RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
-
-COPY docker/php/php.ini /var/www/symfony
 
 WORKDIR /var/www/symfony
