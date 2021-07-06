@@ -28,5 +28,6 @@ Creating symfony-docker_nginx_1 ... done
 ```
 composer install
 composer update symfony/flex
-composer require annotations
+composer require annotations twig
+bin/console cache:clear
 ```
